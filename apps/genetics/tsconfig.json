@@ -1,0 +1,35 @@
+// {
+//   "exclude": ["node_modules"],
+//   "extends": "tsconfig/vite.json",
+//   "compilerOptions": {
+//     "rootDir": "src",
+//     "typeRoots": ["node_modules/@types", "src/@types"],
+//     "outDir": "bundle-genetics"
+//   },
+//   "include": ["src", "codegen.ts"]
+// }
+
+
+{
+  "exclude": ["node_modules", "dist", "build"],
+ 
+  "compilerOptions": {
+    "rootDir": "src",
+    "typeRoots": ["node_modules/@types", "src/@types"],
+    "outDir": "bundle-genetics",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "declaration": true
+  },
+  "include": ["src", "codegen.ts"]
+}
+

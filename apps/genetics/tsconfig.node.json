@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "outDir": "./dist-node",
+      "rootDir": ".",
+      "resolveJsonModule": true
+    },
+    "include": ["vite.config.js", "src/**/*.ts"]
+  }
+  

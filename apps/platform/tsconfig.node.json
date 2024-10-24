@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "module": "commonjs",           // CommonJS for Node.js environment
+      "target": "es2020",             // Modern Node.js supports ES2020 features
+      "outDir": "dist",               // Adjust the output directory for Node.js
+      "lib": ["es2020", "dom"],       // Include DOM types if necessary
+      "types": ["node"]               // Include Node.js type definitions
+    },
+    "include": ["server/**/*.ts", "src/**/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  

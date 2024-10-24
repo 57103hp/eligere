@@ -1,0 +1,19 @@
+{
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "esnext",          // or specify the appropriate target
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "rootDir": "src",
+    "outDir": "bundle-platform"
+  },
+  "include": ["src", "./**/*.gql"]
+}
